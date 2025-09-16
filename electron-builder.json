@@ -1,0 +1,21 @@
+{
+  "appId": "com.electron.vue.app",
+  "productName": "Electron Vue App",
+  "directories": {
+    "output": "build"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*"
+  ],
+  "mac": {
+    "category": "public.app-category.utilities",
+    "target": ["dmg"]
+  },
+  "win": {
+    "target": ["nsis"]
+  },
+  "linux": {
+    "target": ["AppImage", "deb"]
+  }
+}
